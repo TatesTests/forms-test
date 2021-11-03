@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="map" id="map"></div>
-
+<style>
+  * {
+    background-color: red;
+  }
+</style>
 <div class="contact-box">
   <h3>Email</h3><br/>
 	<form action="{{ "/" | relURL }}" method="post" class="contact-form">
