@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="map" id="map"></div>
+
+<div class="contact-box">
+  <h3>Email</h3><br/>
+	<form action="{{ "/" | relURL }}" method="post" class="contact-form">
+		<input type="hidden" name="_to" value="tate@cloudcannon.com" />
+		<input type="hidden" name="_subject" value="Testing Form Submission" />
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<label for="Test">Full Name</label>
+		<input type="text" name="Test" id="name" placeholder="Enter your name..." />
+		<input type="submit" value="Send Message" />
+	</form>
+</div>
+
+<div class="contact-box">
+  <h3>Integromat</h3><br/>
+	<form action="{{ "/" | relURL }}" method="post" class="contact-form">
+		<input type="hidden" name="_hook" value="https://hook.integromat.com/smt6t4ji5tf5jeltv3gratlug21waxp3" />
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<label for="Test">Full Name</label>
+		<input type="text" name="Test" id="name" placeholder="Enter your name..." />
+		<input type="submit" value="Send Message" />
+	</form>
+</div>
+{{ end }}
