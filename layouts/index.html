@@ -1,4 +1,5 @@
 {{ define "main" }}
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <div class="map" id="map"></div>
 <div class="contact-box">
   <h3>Email</h3><br/>
@@ -22,6 +23,31 @@
 		<label for="Test">Full Name</label>
 		<input type="text" name="Test" id="name" placeholder="Enter your name..." />
 		<input type="submit" value="Send Message" />
+	</form>
+</div>
+<h3>Email hcaptcha</h3><br/>
+	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
+		<input type="hidden" name="_to" value="tate@cloudcannon.com" />
+		<input type="hidden" name="_subject" value="Testing Form Submission" />
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<label for="Test">Full Name</label>
+		<input type="text" name="Test" id="name" placeholder="Enter your name..." />
+		<input type="submit" value="Send Message" />
+		<div class="h-captcha" data-sitekey="ed860ebc-3b98-4410-8ff0-cdf742af62fb"></div>
+	</form>
+</div>
+
+<div class="contact-box">
+  <h3>Integromat hcaptcha</h3><br/>
+	<form action="{{ "/" | relURL }}" method="post" class="contact-form">
+		<input type="hidden" name="_hook" value="https://hook.integromat.com/smt6t4ji5tf5jeltv3gratlug21waxp3" />
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<label for="Test">Full Name</label>
+		<input type="text" name="Test" id="name" placeholder="Enter your name..." />
+		<input type="submit" value="Send Message" />
+		<div class="h-captcha" data-sitekey="ed860ebc-3b98-4410-8ff0-cdf742af62fb"></div>
 	</form>
 </div>
 <div style="width:100px;height:100px;background-image: url('image/logo.svg');"></div>
