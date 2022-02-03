@@ -6,10 +6,6 @@
                 {
                     "name": "content-type",
                     "value": "text/plain"
-                },
-                {
-                    "name": "X-Content-Type-Options",
-                    "value": "nosniff"
                 }
             ]
         }
