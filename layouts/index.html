@@ -6,8 +6,8 @@
 <div class="contact-box">
   <h3>Email</h3><br/>
 	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
-	  <input type="hidden" name="inbox_key" value="tate@cloudcannon.com" />
 		<input type="hidden" name="_to" value="tate@cloudcannon.com" />
+		<input type="hidden" name="_cc" value="tate+cc@cloudcannon.com" />
 		<input type="hidden" name="_subject" value="Testing Form Submission" />
 		<input type="text" name="_gotcha" style="display: none;">
 
