@@ -1,18 +1,19 @@
 ---
 title: Our team
-description: We've built an amazing team of developers, marketers, designers and sales people.
+description: >-
+  We've built an amazing team of developers, marketers, designers and sales
+  people.adsasdasd
 type: about
-
 menu:
   main:
-    name: 'About'
+    name: About
     weight: 3
   footer:
-    name: 'About'
+    name: About
     weight: 3
-
 _enabled_editors:
   - visual
   - content
   - source
 ---
+
