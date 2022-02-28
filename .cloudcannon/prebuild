@@ -2,4 +2,4 @@
 git config --global \
 url."https://meow@github.com".insteadOf \
   "https://github.com"
-#git config --global --list
+git config --global --list
