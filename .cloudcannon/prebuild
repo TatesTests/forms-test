@@ -1,5 +1,5 @@
 #git config --global --list
-git config --global \
+git config --local \
 url."https://meow@github.com".insteadOf \
   "https://github.com"
-git config --global --list
+git config --local --list
