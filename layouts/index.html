@@ -3,6 +3,16 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <div class="map" id="map"></div>
+<div class="slack">
+  <h3>Slack</h3><br/>
+	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<label for="Test">Text</label>
+		<input type="text" name="text" id="name"/>
+		<input type="submit" value="Send Message" />
+	</form>
+</div>
 <div class="contact-box">
   <h3>Email</h3><br/>
 	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
