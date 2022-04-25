@@ -4,6 +4,16 @@
 
 <div class="map" id="map"></div>
 <div class="contact-box">
+  <h3>Default</h3><br/>
+	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
+	  <input type="text" name="_to" style="display: none;" value="tate@cloudcannon.com">
+		<input type="text" name="_gotcha" style="display: none;">
+
+		<label for="Test">Text</label>
+		<input type="text" name="text" id="name"/>
+		<input type="submit" value="Send Message" />
+	</form>
+</div>
   <h3>Slack</h3><br/>
 	<form action="{{ "/" | relURL }}" class="contact-form" method="post" enctype="multipart/form-data">
 	  <input type="text" name="_to" style="display: none;" value="tate@cloudcannon.com">
