@@ -4,16 +4,6 @@
 
 <div class="map" id="map"></div>
 <div class="contact-box">
-  <h3>Default</h3><br/>
-	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
-	  <input type="text" name="_to" style="display: none;" value="tate@cloudcannon.com">
-		<input type="text" name="_gotcha" style="display: none;">
-
-		<label for="Test">Text</label>
-		<input type="text" name="text" id="name"/>
-		<input type="submit" value="Send Message" />
-	</form>
-</div>
   <h3>Slack</h3><br/>
 	<form action="{{ "/" | relURL }}" class="contact-form" method="post" enctype="multipart/form-data">
 	  <input type="text" name="_to" style="display: none;" value="tate@cloudcannon.com">
@@ -43,12 +33,30 @@
 <div class="contact-box">
   <h3>Email</h3><br/>
 	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
+	  <input type="text" name="inbox_key" value="legacy-form-orange-mist.cloudvent.net" style="display: none;">
 		<input type="hidden" name="_to" value="tate@cloudcannon.com" />
 		<input type="hidden" name="_subject" value="Testing Form Submission" />
 		<input type="text" name="_gotcha" style="display: none;">
 
 		<label for="Test">Full Name</label>
 		<input type="text" name="Test" id="name" placeholder="Enter your name..." />
+		
+		<div>
+      <input type="radio" id="huey" name="drone" value="huey"
+             checked>
+      <label for="huey">Huey</label>
+    </div>
+
+    <div>
+      <input type="radio" id="dewey" name="drone" value="dewey">
+      <label for="dewey">Dewey</label>
+    </div>
+
+    <div>
+      <input type="radio" id="louie" name="drone" value="louie">
+      <label for="louie">Louie</label>
+    </div>
+		
 		<input type="submit" value="Send Message" />
 	</form>
 </div>
