@@ -31,6 +31,17 @@
 </div>
 
 <div class="contact-box">
+  <h3>Slack Spam</h3><br/>
+	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
+		<input type="text" name="_gotcha" style="display: none;">
+		<input type="text" name="inbox_key" value="legacy-form-orange-mist.cloudvent.net" style="display: none;">
+		<label for="Test">Text</label>
+		<input type="text" name="key" id="name"/>
+		<input type="submit" value="Send Message" />
+	</form>
+</div>
+
+<div class="contact-box">
   <h3>Email</h3><br/>
 	<form action="{{ "/" | relURL }}" class="contact-form" method="post">
 	  <input type="text" name="inbox_key" value="legacy-form-orange-mist.cloudvent.net" style="display: none;">
